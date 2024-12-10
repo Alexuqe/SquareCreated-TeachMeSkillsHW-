@@ -9,18 +9,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    private let spacing: CGFloat = 5
+    private var currentX: CGFloat = 0
+    private var currentY: CGFloat = 0
 
     let button = UIButton()
 
-    let safeScreen: UIView = {
+    private let safeScreen: UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
-
-    let spacing: CGFloat = 5
-    var currentX: CGFloat = 0
-    var currentY: CGFloat = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,12 +33,12 @@ class ViewController: UIViewController {
         configureSafeScreen()
     }
 
-    func configureSafeScreen() {
+    private func configureSafeScreen() {
         view.addSubview(safeScreen)
         constraintsSafeScreen()
     }
 
-    func configureButton() {
+    private func configureButton() {
         var configure = UIButton.Configuration.filled()
         configure.title = "Tap Me"
         configure.baseBackgroundColor = .systemGray4
@@ -85,7 +84,7 @@ class ViewController: UIViewController {
         currentX += squareSize + spacing
     }
 
-    func constraintsSafeScreen() {
+    private func constraintsSafeScreen() {
         NSLayoutConstraint.activate([
             safeScreen.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20),
             safeScreen.leadingAnchor.constraint(equalTo: view.leadingAnchor,constant: 20), // Добавьте эту строку
@@ -95,7 +94,7 @@ class ViewController: UIViewController {
     }
 
 
-    func constraintsButton() {
+    private func constraintsButton() {
         NSLayoutConstraint.activate([
             button.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -50),
             button.centerXAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerXAnchor),
