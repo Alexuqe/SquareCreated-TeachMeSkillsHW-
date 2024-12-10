@@ -87,9 +87,9 @@ class ViewController: UIViewController {
     private func constraintsSafeScreen() {
         NSLayoutConstraint.activate([
             safeScreen.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20),
-            safeScreen.leadingAnchor.constraint(equalTo: view.leadingAnchor,constant: 20), // Добавьте эту строку
-            safeScreen.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20), // Добавьте эту строку
-            safeScreen.bottomAnchor.constraint(equalTo: button.topAnchor, constant: -40) // Оставляем высоту фиксированной
+            safeScreen.leadingAnchor.constraint(equalTo: view.leadingAnchor,constant: 20),
+            safeScreen.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
+            safeScreen.bottomAnchor.constraint(equalTo: button.topAnchor, constant: -40)
         ])
     }
 
