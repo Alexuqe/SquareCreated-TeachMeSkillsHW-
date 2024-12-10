@@ -6,30 +6,21 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		CEF165782D086D0B000A1984 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEF165732D086D0B000A1984 /* Assets.xcassets */; };
+		CEF1657A2D086D0B000A1984 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF165722D086D0B000A1984 /* AppDelegate.swift */; };
+		CEF1657B2D086D0B000A1984 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF165752D086D0B000A1984 /* SceneDelegate.swift */; };
+		CEF1657C2D086D0B000A1984 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF165762D086D0B000A1984 /* ViewController.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		CEF1655A2D086C7D000A1984 /* SquareCreated.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SquareCreated.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEF165722D086D0B000A1984 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CEF165732D086D0B000A1984 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEF165742D086D0B000A1984 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEF165752D086D0B000A1984 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CEF165762D086D0B000A1984 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		CEF1656C2D086C80000A1984 /* Exceptions for "SquareCreated" folder in "SquareCreated" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = CEF165592D086C7D000A1984 /* SquareCreated */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		CEF1655C2D086C7D000A1984 /* SquareCreated */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				CEF1656C2D086C80000A1984 /* Exceptions for "SquareCreated" folder in "SquareCreated" target */,
-			);
-			path = SquareCreated;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		CEF165572D086C7D000A1984 /* Frameworks */ = {
@@ -45,7 +36,7 @@
 		CEF165512D086C7D000A1984 = {
 			isa = PBXGroup;
 			children = (
-				CEF1655C2D086C7D000A1984 /* SquareCreated */,
+				CEF165772D086D0B000A1984 /* SquareCreated */,
 				CEF1655B2D086C7D000A1984 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,6 +47,18 @@
 				CEF1655A2D086C7D000A1984 /* SquareCreated.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		CEF165772D086D0B000A1984 /* SquareCreated */ = {
+			isa = PBXGroup;
+			children = (
+				CEF165722D086D0B000A1984 /* AppDelegate.swift */,
+				CEF165732D086D0B000A1984 /* Assets.xcassets */,
+				CEF165742D086D0B000A1984 /* Info.plist */,
+				CEF165752D086D0B000A1984 /* SceneDelegate.swift */,
+				CEF165762D086D0B000A1984 /* ViewController.swift */,
+			);
+			path = SquareCreated;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -72,9 +75,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				CEF1655C2D086C7D000A1984 /* SquareCreated */,
 			);
 			name = SquareCreated;
 			packageProductDependencies = (
@@ -122,6 +122,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEF165782D086D0B000A1984 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +133,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEF1657A2D086D0B000A1984 /* AppDelegate.swift in Sources */,
+				CEF1657B2D086D0B000A1984 /* SceneDelegate.swift in Sources */,
+				CEF1657C2D086D0B000A1984 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,7 +154,6 @@
 				INFOPLIST_FILE = SquareCreated/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -160,9 +163,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = halushko.SquareCreated;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -178,7 +185,6 @@
 				INFOPLIST_FILE = SquareCreated/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -188,9 +194,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = halushko.SquareCreated;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
